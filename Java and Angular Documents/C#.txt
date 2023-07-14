@@ -1,0 +1,1017 @@
+1. Console.WriteLine("Hello World");
+2. Console.ReadLine();
+======================================================================================
+
+Data Types:
+==============
+string phrase = "Saravanan Actalent";
+char grade = 'A';
+int age = 34;
+double gpa = 3.2;
+bool isMale = true;
+Console.WriteLine(phrase +" "+ grade +" "+ age +" "+ gpa + " "+ isMale);
+========================================================================================
+New Line:
+Console.WriteLine("Hello\nWorld");
+========================================================================================
+
+string name = "Hello World";
+Console.WriteLine(name.Substring(6, 4));
+Console.ReadLine();
+
+Note: There are so many method in string. we can get those method from W3School site.
+========================================================================================
+Number:
+1. Integer.
+2. Decimal Number
+   a. float - less precious
+   b. double 
+   c. decimal - most precious
+
+
+Little piece of code:
+==========================================
+
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+
+Console.Write("Enter your age: ");
+string age = Console.ReadLine();
+
+
+Console.WriteLine("Hello " + name);
+Console.WriteLine("You are  " + age+" old");
+
+Console.ReadLine();
+=============================================
+
+Convert String into number:
+============================
+
+int num = Convert.ToInt32("45");
+
+Console.WriteLine(num);
+
+Console.ReadLine();
+
+=================================================
+
+Small task creation:
+========================
+Console.Write("Enter a number: ");
+double num1 = Convert.ToDouble( Console.ReadLine() );
+
+Console.Write("Enter another number: ");
+double num2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine(num1 + num2);
+
+Console.ReadLine();
+==========================================================
+
+Mad Lib Game:
+==========================================================
+
+string color, pluralNoun, celebrity;
+
+Console.Write("Enter a color: ");
+color = Console.ReadLine();
+
+Console.Write("Enter a pluralNoun: ");
+pluralNoun = Console.ReadLine();
+
+Console.Write("Enter a celebrity: ");
+celebrity = Console.ReadLine();
+
+Console.WriteLine("Roses are " + color);
+Console.WriteLine(pluralNoun + " are blue");
+Console.WriteLine("I love " + celebrity);
+
+Console.ReadLine();
+==========================================================
+
+Arrays:
+==========================================================
+int[] luckyNumber = {4, 8, 15, 16, 23, 42 };
+
+string[] friends = new string[5];
+friends[0] = "Saravana";
+friends[1] = "Mani";
+friends[2] = "Lalith";
+friends[3] = "Srinivasan";
+friends[4] = "Gowdham";
+         
+
+Console.WriteLine(friends[2]);
+
+
+Console.ReadLine();
+==========================================================
+
+namespace HelloWorld
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            SayHi("Saravanan", 23);
+            SayHi("Dhoni", 41);
+            SayHi("Rohit", 34);
+
+
+
+            Console.ReadLine();
+       
+        }
+        
+        static void SayHi (string name, int age)
+        {
+            Console.WriteLine("Hello " + name +" You are " + age + " old");
+        }
+
+    }
+}
+
+==================================================================================================
+
+Return Statement:
+=================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int cubedNumber = cube(5);
+
+           Console.WriteLine(cubedNumber);
+            Console.ReadLine();
+        }
+
+        static int cube(int num)
+        {
+            int result = num * num * num;
+
+            return result;
+        }
+
+    }
+}
+=====================================================================================================
+
+If Statement using boolen
+=========================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool isMale = false;
+            bool isTall = true;
+
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are tall male");
+            }
+            else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are male but not tall");
+            }
+
+            else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are not male but tall");
+            }
+
+            else
+            {
+                Console.WriteLine("You are either male or not male or both");
+
+            }
+
+
+
+            Console.ReadLine();
+        }
+
+      
+
+    }
+} 
+==============================================================================================================
+
+If Statement using more comparison operator:
+============================================
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int final = GetMax(544, 544, 544548);
+
+            Console.WriteLine(final);
+
+            Console.ReadLine();
+        }
+
+      static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+
+            if(num1 >= num2 && num1 >= num3)  
+            {
+                result = num1;
+            }
+            else if (num2 >= num1 && num2 >= num3)
+            {
+                result = num2;
+            }
+            else
+            {
+                result = num3;
+            }
+
+            return result;
+        }
+
+    }
+} 
+====================================================================================================================
+
+Building a better calculator:
+=============================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Enter a number: ");  
+            double num1 = Convert.ToDouble( Console.ReadLine() );
+
+
+            Console.Write("Enter Operator: ");
+            string op = Console.ReadLine();
+
+            Console.Write("Enter another number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if(op == "+")
+            {
+                Console.WriteLine(num1 + num2);
+            }
+            else if (op == "-")
+            {
+                Console.WriteLine(num1 - num2);
+            }
+            else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            }
+            else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Operation");
+            }
+
+
+            Console.ReadLine();
+        }
+
+
+    }
+} 
+===============================================================================================================================
+
+Switch statement:
+=================
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine(GetDay(2));
+
+            Console.ReadLine();
+        }
+
+
+        static string GetDay(int dayNum)
+        {
+
+            string dayName;
+
+            switch (dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+
+                case 1:
+                    dayName = "Monday";
+                    break;
+
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+
+                case 4:
+                    dayName = "Thursday";
+                    break;
+
+                case 5:
+                    dayName = "Friday";
+                    break;
+
+
+                case 6:
+                    dayName = "Saturday";
+                    break;
+
+                default:
+                    dayName = "Invalid Number";
+                    break;  
+
+            }
+
+            return dayName ;
+        }
+
+    }
+} 
+==============================================================================================================================================
+
+While Loop:
+===========
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int index = 1;
+
+            while (index <= 5)
+            {
+                Console.WriteLine(index);
+                index++;
+            }
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+================================================================================================================================================
+
+Do while Loop:
+=====================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int index = 7;
+            do
+            
+            {
+                Console.WriteLine(index);
+                index++;
+            } while (index <= 5) ;
+
+                Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+=====================================================================================================================================================
+
+Building Guessing Game:
+========================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string secretWord = "Saravanan";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuessess = false;
+
+            while (guess != secretWord && !outOfGuessess)
+            {
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuessess = true;
+                }
+               
+            }
+
+            if (outOfGuessess)
+            {
+                Console.Write("You Lose!");
+            }
+            else
+            {
+                Console.Write("You Win!");
+            }
+
+            
+
+                Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+
+===================================================================================================================================================================
+
+For loop:
+==========
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] luckyNumber = { 4, 45, 56, 54, 635, 35, 545 };
+
+          for(int i=0; i<luckyNumber.Length; i++)
+            {
+                Console.WriteLine(luckyNumber[i]);
+            }
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+==========================================================================================================================================================================
+
+Building an Exponent Method:
+=============================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine(GetPow(5, 3));
+
+            Console.ReadLine();
+        }
+
+        static int GetPow(int baseNumber, int powerNumber)
+        {
+
+            int result = 1;
+
+            for (int i=0; i < powerNumber; i++)
+            {
+                result = result * baseNumber;
+            }
+
+            return result;
+
+
+        }
+
+
+    }
+} 
+================================================================================================================================================================================
+
+Arrays 2D:
+===========
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] numberGrid =
+            {
+                 {1, 2 },
+                 { 5, 6},
+                 { 2, 4}
+            };
+
+            Console.WriteLine(numberGrid [1, 1]);
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+========================================================================================================================================================================================
+
+Exception Handling:
+======================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            try
+            {
+                 Console.Write("Enter a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter another number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(num1 / num2);
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);  
+            }
+            finally
+            {
+                Console.WriteLine("The code will execute no matter whatever exception throws by C#........");
+            }
+            
+           
+            
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+=====================================================================================================================================================================================================
+
+Classes & Objects;
+===================
+
+namespace HelloWorld
+{
+     class Book
+    {
+        public string title;
+        public string author;
+        public int pages;
+
+    }
+}
+
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Book book = new Book();
+
+            book.title = "Batman";
+            book.author = "Christoper Nolan";
+            book.pages = 300;
+             
+            Console.WriteLine(book.title);
+            Console.WriteLine(book.author);
+            Console.WriteLine(book.pages);
+
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+
+=====================================================================================================================================================================================
+
+Constructors:
+==============
+
+namespace HelloWorld
+{
+     class Book
+    {
+        public string title;
+        public string author;
+        public int pages;
+
+        public Book(string aTitle, string aAuthor, int aPage)
+        {
+            title = aTitle;
+            author = aAuthor;
+            pages = aPage;
+        }
+
+    }
+}
+
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Book book = new Book("Saravanan", "Nolan", 3);
+
+
+
+            Console.WriteLine(book.title);
+
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+
+======================================================================================================================================================================================================
+
+Object Methods:
+================
+
+namespace HelloWorld
+{
+    class Student
+    {
+
+        public string name;
+        public string major;
+        public double gpa;
+
+        public Student(string aName, string aMajor, double gGpa)
+        {
+            name = aName;
+            major = aMajor;
+            gpa = gGpa;
+         }
+
+        public bool HasHoners()
+        {
+            if(gpa >= 3)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+    }
+}
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+           Student stu = new Student("Saravanan", "Bussiness", 8);
+
+
+
+            Console.WriteLine(stu.HasHoners());
+
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+============================================================================================================================================================================================================
+
+Getters & Setters:
+
+
+namespace HelloWorld
+{
+    class Movie
+    {
+
+        public string title;
+        public string director;
+        private string rating;
+
+        public Movie(string aTitle, string aDirector, string aRating)
+        {
+            title = aTitle;
+            director = aDirector;
+            Rating = aRating;
+
+        }
+
+        public string Rating
+        {
+            get { return rating; }
+           
+            set {
+            
+                if( value == "G" || value == "PG" || value == "PG-13" || value == "R" || value == "NR" )
+                {
+                    rating = value;
+                }
+                else{
+                    rating = "N";
+                }
+                
+
+            }
+        }
+
+
+    }
+}
+
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+         Movie avengers = new Movie("The Avengers", "Joss", "PG-13" );
+
+            Console.WriteLine(avengers.Rating);
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+=====================================================================================================================================================================================================
+
+ Static Class Attributes:
+=============================
+
+
+namespace HelloWorld
+{
+     class Song
+    {
+
+        public string title;
+        public string artist;
+        public int duration;
+        public static int songCount = 0;
+
+
+        public Song(string aTitle, string aArtist, int aDuration)
+        {
+            title = aTitle;
+            artist = aArtist;
+            duration = aDuration;
+          
+        }
+
+   public int getSongCount()
+        {
+            return songCount;
+        }
+    
+    }
+}
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Song holiday = new Song("Holiday", "Nolan", 200);
+
+            Console.WriteLine(holiday.getSongCount());
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+
+
+Note: Static method is method which is belong to class itself. No need to create object for static method to access.
+
+
+=============================================================================================================================================================================================================
+
+
+ Static Methods & Classes:
+==============================
+
+Best example of static method:
+====================================
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine(Math.Sqrt(144));
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+
+above the code there is Math class into the Math class there are some Sqrt static method. So we can access the directly. There is no need to create object to access Sqrt method.
+==================================================================================================================================================================================================================
+
+namespace HelloWorld
+{
+    static class UseFullTools
+    {
+        // For static class we cannot create instance.
+
+        public static void SayHi(string name)
+        {
+            Console.WriteLine("Hello" + name);
+        }
+
+    }
+}
+
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            UseFullTools.SayHi("Saravanan");
+
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+
+
+
+============================================================================================================================================================================================================
+
+Inheritance:
+=================
+
+namespace HelloWorld
+{
+    class Chef
+    {
+        public void MakeChicken()
+        {
+            Console.WriteLine("The Chef makes chicken");
+        }
+
+        public void MakeSalad()
+        {
+            Console.WriteLine("The Chef makes salad");
+        }
+
+        public virtual void MakeSpecialDish()
+        {
+            Console.WriteLine("The Chef makes bbq ribs");
+        }
+
+
+
+
+
+    }
+}
+
+namespace HelloWorld
+{
+    internal class ItalianChef : Chef
+    {
+        public override void MakeSpecialDish()
+        {
+            Console.WriteLine("The Chef makes chicken parm");
+        }
+
+        public void MakePasta()
+        {
+            Console.WriteLine("The Chef makes Pasta");
+        }
+
+
+      
+
+    }
+}
+
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
+
+
+            ItalianChef ItalianChef = new ItalianChef();
+            ItalianChef.MakeSpecialDish();
+
+
+            Console.ReadLine();
+        }
+
+
+
+
+    }
+} 
+===================================================================================================================================================================================================
+
+
+
+
+
+
+

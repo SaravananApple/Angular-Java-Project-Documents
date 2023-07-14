@@ -1,0 +1,25 @@
+1. Introduction.
+2. Features.
+3. Version History.
+4. CLI(Command Line Interface).
+5. Structure of Angular Project.
+6. Application Workflow
+7. Main Building Blocks of Angular
+   a. Modules.
+   b. Component.
+   c. Template.
+   d. Metadata.
+   e. Data Binding (Types).
+   f. Directives (List of Directives, Help to manipulate DOM).
+   g. Services.
+   h. Dependency Injection.
+8. Angular libraries
+9. Angular Pipes.
+10.Routing (routerLink, RouterLinkActive, RouterOutlet).
+11. Component Interaction (Input, Output & Eventemitter).
+12. Template driven form (ng form, ng Model, validation).Note: Currrently Industry not using template driven form. right now reactive form using almost.
+13. Reactive form (From Group, From Control, Form Array, Form validaton, SetValue & PatchValue).
+14. Route Guard in Angular.
+15. localStorage and sessionStorage.
+16. Services(Features of Services, Why Services,Injecting Services into Component, Dependency Injection).
+17. Http (Http Mechanism, Http Implementation, Using free API get values in JSON format).

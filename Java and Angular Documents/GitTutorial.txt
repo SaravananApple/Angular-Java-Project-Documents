@@ -1,0 +1,22 @@
+Git clone
+Commits
+git remote -v
+git add. 
+git commit -m "Initial commit"
+git log ( Overview of commits).
+git status
+git reset stagedFile.txt (Back to set untracked).
+git branch
+git branch FeatureBranch (Created New Branch).
+git checkout <Branch Name>(Change branch).
+git show
+git show --name-only <Name only>
+git reflog (Show all the details include branches).
+git push (Local machine to remote repo).
+git pull (Retrives commits from central repository to the local machine).
+git revert (Create a new commit to undo changes).
+git reset --soft (removes commits from history keep changes).
+git reset --hard (removes commits from history remove changes).
+git merge (Merge branches).
+git push -f (Local machine is right. So it has to push force fully).
+

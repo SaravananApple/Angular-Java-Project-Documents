@@ -1,0 +1,9 @@
+
+@Input -> Parent to child. (Once parent loaded then child will load).
+
+@Output & Eventemitter -> child to parent.(When we try to edit in child we are pass value back to the parent).
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+

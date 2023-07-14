@@ -1,0 +1,69 @@
+
+Spring is framework of frameworks.
+
+
+Hirerchy of Spring Framework:
+
+1. Spring Core.
+2. Spring MVC.
+3. Spring Boot.
+
+
+
+Spring Core:
+
+
+
+1. Bean factory.
+2. Application Context.
+
+Meaven -> Build Tool.(For JAR file).
+
+XML -> Self define tags.
+
+Setter Injection (Property Tag) and constructor Injection (Constructor argument tag).
+
+
+The above details all are core concept of Spring Core. Those fuctions has beeen running while Spring boot working.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Spring Boot:
+
+Before dive into Spring boot. We have to understand what is MVC architecher.
+
+MVC -> Model(Java Class), Controller(Handler Mapping), View(Html).
+
+
+We used JSP in java. hint(bind java code into html code). In JSP We aren't using MVC technic.
+
+
+To overcome lot of problem in JSP the Spring Frame work introduced.
+
+
+
+Dispatcher Servlet (Front Controller):
+
+When you click any request the request will not go to first in the controller. It's always will go to the dispatercher then the dispatcher controller will send that to the controller.

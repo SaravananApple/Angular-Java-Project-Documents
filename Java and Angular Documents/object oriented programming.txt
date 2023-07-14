@@ -1,0 +1,20 @@
+object oriented programming
+
+1.class
+
+2.object
+
+3.encapsulation
+
+4.inheritance
+a.single inheritance
+b.multilevel inheritance
+c.Hierarchical inheritance
+
+5.polymorphism
+a.Method overloading
+b.Method overoverriding
+
+6.abstract
+a.abstract class
+b.interface

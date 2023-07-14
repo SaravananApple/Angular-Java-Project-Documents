@@ -1,0 +1,16 @@
+Environment setup:
+---------------------------
+1. node Js
+2. npm - (node pakage manager)
+3. Angular CLI - (Configuration)
+4. ng modules - (External libraries to use our application)
+----------------------------------------------------------------------
+Angular:
+
+index.html
+main.ts
+ng model
+ng component
+-----------------------------------------------------------------------
+
+

@@ -1,0 +1,24 @@
+1. Components
+2. props
+3. state
+4. events
+5. conditional rendering
+6. list
+7. keys 
+8. style
+9. event binding 
+10. form 
+11. lifecycle
+12. error boundary
+13. fragments
+14. refs 
+15. portals
+16. higher order components
+17. context
+18. http
+19. useState
+20. useEffect 
+21. useContext
+22. custom hooks
+23. Promises (Js)
+24. async, await(Js)
